@@ -1,0 +1,24 @@
+{
+  "name": "aur-update-checking",
+  "version": "1.0.0",
+  "description": "Script to check for AUR updates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BertrandPeltier/AUR-update-checking.git"
+  },
+  "author": "Bertrand Peltier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BertrandPeltier/AUR-update-checking/issues"
+  },
+  "homepage": "https://github.com/BertrandPeltier/AUR-update-checking#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "simple-git": "^2.36.0"
+  }
+}
