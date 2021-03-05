@@ -15,7 +15,17 @@ fs.readdir(aurDirectory, (error, files) => {
     files.forEach(file => {
 
         gitPull(`${aurDirectory}${file}`).then((result) => {
-            console.log(file,' :\n', result.summary, '\n');
+
+            if (result.summary.changes === 0) {
+
+                console.log('# ' + file + ' : up to date...' + '\n');
+
+            } else {
+
+                console.log('----' + '\n' + '# ' + file + ' :\n' + result + '\n' + '----');
+
+            }
+
         });
 
     });
